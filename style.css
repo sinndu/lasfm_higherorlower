@@ -1,0 +1,282 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin:0px;
+  padding:0px;
+
+}
+
+button
+{
+  opacity:100%;
+  transition: 3s;
+}
+
+h1
+{
+  color:white;
+  opacity: 100%;
+  text-align: center;
+  font-size: 6vmin;
+  padding:0px;
+  margin:0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width:40vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.desc
+{
+  color:white;
+  text-align: center;
+  font-size:2.5vmin;
+  padding:0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width:40vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body
+{
+  margin:0px;
+  padding:0px;
+  background-color: #0d0d0dFF;
+}
+
+.hidden
+{
+  display:none;
+}
+
+.animatedhidden{
+  opacity: 0%;
+  transition:3s;
+}
+div
+{
+/*   background-color: green; */
+  text-align: center;
+  margin: auto;
+}
+
+#left
+{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+#right
+{
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%); 
+}
+
+#score
+{
+  position: absolute;
+  top: 97%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5vmin;
+}
+
+#img_1
+{
+  position:absolute;
+  height:100vh;
+  width:50vw;
+   filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+#img_2
+{
+  position: absolute;
+  left:50%;
+  height:100vh;
+  width:50vw;
+   filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+#overlay
+{
+  position:absolute;
+  width: 100vw;
+  height:100vh;
+  opacity: 85%;
+}
+
+.gameButton
+{
+  width:20vmin;
+  height:7vmin;
+  background-color: rgba(0,0,0,0);
+  border-radius: 2vmin;
+  border-color: white;
+  border-width: 0.5vmin;
+  margin-bottom: 1vmin;
+  color: white;
+  font-size:2.25vmin;
+  border-style: solid;
+    transition: 0.2s;
+  
+}
+
+.gameButton:hover
+{
+  background-color: white;
+  color:black;
+}
+
+#desc_3
+{
+  margin-top: 2vmin;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width:40vw;
+}
+
+#vs
+{
+  border-radius: 50%;
+  width:10vmin;
+  height:10vmin;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 4vmin;
+  text-align: center;
+  line-height: 9.5vmin;
+}
+
+#start{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/*   background-color: green; */
+}
+
+#username
+{
+  width:50vmin;
+  height:10vmin;
+  color: white;
+  background-color: #0d0d0dFF;
+  border-color: white;
+  border-width: 0.5vmin;
+  font-size: 6vmin;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-style: solid;
+}
+
+#method{
+  width:16.9vmin;
+}
+
+#period{
+  width:16.9vmin;
+}
+
+#limit{
+  width:16.9vmin;
+}
+
+.startButton
+{
+  height:4vmin;
+  background-color: #171717FF;
+  color:white;
+  margin-top:  0.5vmin;
+  border-color: #2b2b2bFF;
+  text-align: center;
+  font-size: 2vmin;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.2s;
+}
+
+#startButton{
+  width:51.5vmin;
+  height:6.5vmin;
+  margin-top: 0.5vmin;;
+  background-color: #171717FF;
+  border-color: #383838FF;
+  color:white;
+  font-size: 4vmin;;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 1vmin;
+  border-style: solid;
+    transition: 0.2s;
+}
+
+#startButton:hover{
+  background-color: #383838;
+}
+
+.startButton:hover{
+    background-color: #383838;
+}
+
+#username:focus
+{
+  outline-width: 0;
+}
+
+.startButton:focus
+{
+  outline-width: 0;
+}
+
+#title{
+  width:51.5vmin;
+  font-size: 5vmin;
+  margin-bottom: 0.5vmin;
+}
+
+
+
+.red{
+  background-color: #DF3F3F !important;
+  transition: 0.5s;
+}
+
+.green{
+  background-color: #38c738 !important;
+  transition: 0.5s;
+}
+
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+
+
+#scrobbles_2{
+  position:absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+    transition: --num 1s;
+  counter-reset: num var(--num);
+}
+
+#scrobbles_2:hover {
+  --num: 10000;
+}

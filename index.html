@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Higher or Lower</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="start">
+    <h1 id="title">LAST.FM<br>HIGHER OR LOWER</h1>
+  <input id="username" type="text" autocomplete="off">
+  <br>
+  <select id="method" class="startButton">
+    <option value="gettoptracks">Tracks</option>
+<!--     <option value="gettopartists">Artist</option>
+    <option value="gettopalbums">Album</option> -->
+  </select>
+  <select id="period"class="startButton">
+    <option value="overall">Lifetime</option>
+    <option value="7day">Last Week</option>
+    <option value="1month">Last Month</option>
+    <option value="12month">Last Year</option>
+  </select>
+  <select id="limit"class="startButton">
+    <option value="50">50</option>
+    <option value="100">100</option>
+    <option value="200">200</option>
+    <option value="500">500</option>
+
+  </select>
+    <br>
+        <button id="startButton" onclick="initalize()">PLAY</button>
+  </div>
+  <img id="img_1" class="hidden" src="">
+  <img id="img_2" class="hidden" src="">
+  <img id="overlay" class="hidden" src="/overlay.jpg">
+
+  
+  <div id="left" class="hidden">
+    <h1 id="title_1">Temporary!</h1>
+    <p id="desc_1" class="desc">by Temp has</p>
+    <h1 id="scrobbles_1"></h1>
+  </div>
+    
+  <div id="right" class="hidden">
+    <h1 id="title_2">Temporary!</h1>
+    <p id="desc_2" class="desc">by Temp has</p>
+    <h1 id="scrobbles_2" class="hidden animatedhidden"></h1>
+    <button class ="gameButton" id="higher"onclick="gameLoop(0)">Higher</button>
+    <br>
+    <button class ="gameButton" id="lower"onclick="gameLoop(1)">Lower</button>
+    <p id="desc_3" class="desc">scrobbles than Temp</p>
+  </div>
+  
+  <h1 id="score"class="hidden">Score: 0</h1>
+  <h1 id="vs" class="hidden">VS</h1>
+<!--   <img id="song_img_1" src="">
+  <img id="song_img_2" src=""> -->
+<script src="script.js"></script>
+</body>
+
+</html>
